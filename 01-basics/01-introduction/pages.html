@@ -22,6 +22,27 @@
         padding: 0.5rem 1rem;
         font-size: 1.2rem;
       }
+
+      .container {
+        width: 300px;
+        padding: 2rem;
+        margin: 1rem auto;
+      }
+      .container button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+      }
+
+      #btn-off {
+        background-color: red;
+        color: white;
+      }
+      #btn-on {
+        background-color: green;
+        color: white;
+      }
     </style>
     <title>Learn js - Variables</title>
   </head>
@@ -30,6 +51,26 @@
     <div id="demo">This a demo of learning Javascript</div>
 
     <button id="click-me">Click me</button>
+
+    <div class="container">
+      <button
+        id="btn-off"
+        onclick="document.getElementById('bulb').src='https://www.w3schools.com/js/pic_bulboff.gif'"
+      >
+        Turn Off
+      </button>
+      <img
+        id="bulb"
+        src="https://www.w3schools.com/js/pic_bulboff.gif"
+        alt="off"
+      />
+      <button
+        id="btn-on"
+        onclick="document.getElementById('bulb').src='https://www.w3schools.com/js/pic_bulbon.gif'"
+      >
+        Turn On
+      </button>
+    </div>
     <!-- Include Js file -->
     <script src="app.js" defer></script>
   </body>
